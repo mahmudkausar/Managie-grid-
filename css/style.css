@@ -1,0 +1,807 @@
+
+ /* ============= commmon css start ============== */
+*{
+    margin: 0;
+    padding: 0;
+}
+ul,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+/* ============= commmon css end ============== */
+
+/* ============= nav part start ============== */
+nav{
+    max-width: 100%;
+    padding: 34px 0;
+    background: #394792;
+    color: #fff;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+}
+
+nav .sidebyside{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+}
+nav .nav_item{
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    gap: 60px;
+}
+nav ul{
+    font-weight: 400;
+    display: contents;
+}
+nav ul li{
+    position: relative;
+    cursor: pointer;
+}
+nav ul li::after{
+    width: 0;
+    height: 1px;
+    background: #fff;
+    position: absolute;
+    content: "";
+    bottom: -3px;
+    left: 0;
+    transition: all linear .3s;
+}
+
+nav ul li:hover::after{
+    width: 98%;
+}
+nav .logo{
+    justify-self: center;
+}
+nav .button {
+    justify-self: end;
+}
+nav .button a{
+    color: #fff;
+    font-weight: 500;
+    border: 1px solid transparent;
+    padding: 16px 40px;
+    border-radius: 30px;
+    transition: all linear .3s;
+}
+nav .button a:hover{
+    border-color: #fff;
+}
+/* ============= nav part end ============== */
+/* font-family: "Space Grotesk", sans-serif; */
+/* ============= banner part start ============== */
+#banner{
+    background: #394792;
+}
+#banner .sidebyside{
+    display: grid;
+    grid-template-columns: 62% 38%;
+    padding-top: 150px;
+}
+
+#banner .left h1{
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 500;
+    color: #FFF;
+    font-size: 64px;
+    font-style: normal;
+    line-height: 120%;
+    position: relative;
+}
+#banner .left h1 .shape{
+    position: absolute;
+    bottom: -9px;
+    right:15px;
+}
+#banner .left h1 .arrow{
+    width: 90px;
+    position: absolute;
+    top: 35px;
+    right: -70px;
+}
+#banner .left>p{
+    max-width: 550px;
+    color: #FFF;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 170%;
+    letter-spacing: -0.81px;
+    opacity: 0.8;
+    margin-top: 32px;
+    margin-bottom: 40px;
+}
+
+#banner .left .button a{
+    color: #fff;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+    border: 1px solid #FFF;
+    padding: 18px 32px;
+    border-radius: 30px;
+    transition: all linear .3s;
+    margin-right: 24px;
+    margin-bottom: 60px;
+    color: #394792;
+    background: #FFF;
+}
+#banner .left .button a:hover{
+    background: #394792;
+    color: #FFF;
+}
+#banner .left .info{
+    display: grid;
+    grid-template-columns: repeat(3,90px);
+    gap: 80px;
+}
+#banner .left .info .item h3{
+    color: #FFF;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -1.28px;
+    margin-bottom: 8px;
+
+}
+#banner .left .info .item p{
+    min-width: 86px;
+    color: #FFF;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    opacity: 0.8;
+    margin-bottom: 135px;
+}
+
+#banner .left .info .item{
+    position: relative;
+}
+#banner .left .info .item::after {
+    position: absolute;
+    content: "";
+    right: -40px;
+    top: 25px;
+    width: 2px;
+    height: 62px;
+    background: rgba(255, 255, 255, 0.16);
+}
+#banner .left .info .item:last-child::after{
+   display: none;
+}
+
+#banner .right img{
+    width: 133%;
+    position: relative;
+    left: -35px;
+    top: 237px;
+}
+
+/* ============= banner part end ================ */
+/* ============= management part start ================ */
+#management{
+    padding-top: 100px;
+}
+#management h2{
+    width: 100%;
+    color: #232323;
+    text-align: center;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: -2.4px;
+    position: relative;
+    margin-bottom: 64px;
+}
+#management h2 .shape2{
+    position: absolute;
+    top: 44px;
+    right: 293px;
+}
+#management .sidebyside{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 32px;
+}
+#management .sidebyside h5{
+    color: #232323;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; 
+    letter-spacing: -1.2px;
+    margin-top: 24px;
+}
+#management .sidebyside p{
+    color: #757575;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 170%;
+    letter-spacing: -0.9px;
+    margin-top: 16px;
+    margin-bottom: 100px;
+}
+
+/* ============= management part end ================ */
+
+/* ============= difference part start ================ */
+#difference{
+    margin-bottom: 90px;
+}
+#difference .sidebyside{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 117px;
+    
+
+}
+
+#difference .sidebyside .right h2{
+    color: #232323;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: -2.4px;
+    position: relative;
+}
+#difference .sidebyside .right h2 img {
+    position: absolute;
+    top: 48px;
+    right: 25px;
+    opacity: 0.7;
+}
+#difference .sidebyside .right p{
+    color: #232323;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 170%;
+    letter-spacing: -0.81px;
+    margin-top: 24px;
+    margin-bottom: 32px;
+}
+
+#difference .sidebyside .right ul{
+    color: #000;
+    font-family: "Inter",sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 170%; 
+    letter-spacing: -0.81px;
+    display: grid;
+    gap: 24px;
+}
+
+#difference .sidebyside .right ul li{
+    display: grid;
+    grid-template-columns: 60px auto;
+    align-items: center;
+    border: 1px solid rgba(35, 35, 35, 0.16);
+    padding: 16px;
+    border-radius: 16px;
+}
+
+
+/* ============= difference part end ================ */
+
+/* ============= user part start ================ */
+#user{
+    background: #F9FAFF;
+    padding: 100px 0 130px 0;
+}
+#user .sidebyside .left{
+    display: grid;
+    grid-template-columns: 1000px 200px;
+    align-items: end;
+}
+#user .sidebyside .left .item h3{
+    color: #232323;
+    font-family: "Space Grotesk",sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; 
+    letter-spacing: -2.4px;
+    position: relative;
+}
+#user .sidebyside .left .item h3 img {
+    position: absolute;
+    top: 43px;
+    left: 205px;
+}
+#user .sidebyside .left .item p{
+    width: 558px;
+    color: #232323;
+    font-family: "Inter",sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 170%;
+    letter-spacing: -0.81px;
+    margin-top: 32px;
+}
+#user .left .arrow{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: end;
+    align-self: end;
+    column-gap: 24px;
+}
+#user .left .arrow i{
+    color: #000;
+    text-align: center;
+    font-size: 24px;
+    width: 72px;
+    height: 72px;
+    background: #757575;
+    border-radius: 50%;
+    line-height: 72px;
+    transition: all linear .3s;
+}
+#user .left .arrow i:hover{
+    background: #325B97;
+    color: #FFF;
+}
+
+#user .right{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 24px;
+    margin-top: 64px;
+}
+#user .right .item h4{
+    color: #000;
+    font-family: "Inter",sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -1.08px;
+}
+
+#user .right .item{
+    width: 495px;
+    height: 265px;
+    border-radius: 32px;
+    background: #FFF;
+    padding: 48px;
+}
+#user .right .item h4{
+    font-family: "Inter",sans-serif;
+}
+#user .right .item h4 i{
+    width: 18px;
+    height: 18px;
+    color: #FFC236;
+    margin-right: 8px;
+}
+#user .right .item .red{
+    width: 496px;
+    color: #757575;
+    font-family: "Inter",sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 170%;
+    letter-spacing: -0.81px;
+    margin-top: 24px;
+}
+
+#user .right .item .profile::after{
+    position: absolute;
+    top: -29px;
+    left: 0;
+    content: "";
+    width: 496px;
+    height:1px;
+    background: rgba(35, 35, 35, 0.16);;
+
+}
+#user .right .profile{
+    margin-top: 48px;
+    display: grid;
+    grid-template-columns: 88px 485px;
+    position: relative;
+}
+#user .right .profile img{
+    width: 72px;
+}
+
+#user .right .profile h5{
+    color: #232323;
+    font-family: "Inter",sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 170%;
+    letter-spacing: -0.81px;
+}
+#user .right .profile h5 .ptag{
+    color: #757575;
+    font-family: "Inter",sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 170%;
+    letter-spacing: -0.81px;
+}
+
+/* ============= user part end ================ */
+
+/* ============= price part start ================ */
+#price{
+    margin-bottom: 100px;
+}
+#price .heading{
+    text-align: center;
+    margin: 0 auto;
+}
+#price .heading h2{
+    color: #232323;
+    font-family: "Space Grotesk",sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: -2.4px;
+    margin-top: 100px;
+    margin-bottom: 32px;
+}
+#price .heading p{
+    color: #232323;
+    font-family: "Inter",sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 170%;
+    letter-spacing: -0.81px;
+    opacity: 0.8;
+    margin-bottom: 64px;
+}
+#price .box{
+    display: grid;
+    grid-template-columns:  379px 379px 379px;
+    column-gap: 32px;
+
+}
+#price .items{
+    border-radius: 32px;
+    border: 1px solid rgba(35, 35, 35, 0.16);
+    background: #FFF;
+    padding: 32px 64px 28px 32px;
+    transition: all linear .3s;
+   
+}
+#price .items .mini-box{
+    padding: 6px 24px 6px 20px;
+    display: grid;
+    align-items: center;
+    gap: 16px;
+    border-radius: 30px;
+    border: 1px solid rgba(35, 35, 35, 0.16);
+    width: 206px;
+    height: 57px;
+    margin-bottom: 28px;
+    position: relative;
+
+   
+}
+
+#price .items .green{
+    padding: 6px 24px 6px 20px;
+    display: grid;
+    align-items: center;
+    gap: 16px;
+    border-radius: 30px;
+    border: 1px solid rgba(35, 35, 35, 0.16);
+    width: 244px;
+    height: 57px;
+    margin-bottom: 28px;
+    position: relative;
+
+}
+#price .items .mini-box h3{
+    
+    font-family: "Space Grotesk",sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; 
+    letter-spacing: -1.6px;
+    margin-left: 37px;
+    transition: all linear .3s;
+}
+#price .items .mini-box .red{
+    font-family: "Space Grotesk",sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; 
+    letter-spacing: -1.6px;
+    width: 243px;
+    height: 45px;
+    margin-left: 45px;
+}
+
+#price .items .mini-box h3 i{
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    position: absolute;
+    top: 17px;
+    left: 20px;
+}
+#price .items h4{
+    color: #232323;
+    font-family: "Space Grotesk",sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: -2.4px;
+    transition: all linear .3s;
+}
+
+#price .items h4 strong{
+    color: #757575;
+    text-align: center;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: -1.2px;
+}
+#price .items p{
+    color: #757575;
+    font-family: "Inter",sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; 
+    letter-spacing: -0.9px;
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+
+#price .items ul .blar{
+    color: #8E8E8E;
+   
+} 
+#price .items ul li{
+    color: #232323;
+    font-family: "Inter",sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: -0.9px;
+    display: grid;
+    column-gap: 16px;
+    margin-top: 16px;
+    grid-template-columns: 24px auto;
+    transition: all linear .3s;
+}
+#price .items ul li i{
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    color: #394792;
+    transition: all linear .3s;
+}
+#price .items .btn{
+    width: 315px;
+    height: 56px;
+    border-radius: 100px;
+    background: #325B97;
+    margin-top: 32px;
+    position: relative;
+    transition: all linear .3s;
+}
+
+#price .items .btn a {
+    color: #FFF;
+    font-family: "Inter",sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: -0.9px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all linear .3s;
+}
+#price .items:hover .btn{
+    background: #FFF;
+    color: #325B97;
+}
+#price .items:hover a{
+    color: #325B97;
+}
+#price .items:hover{
+    background: #325B97;
+}
+
+#price .items:hover h3{
+    color: #FFF;
+}
+
+#price .items:hover h4{
+    color: #FFF;
+}
+
+
+#price .items:hover li{
+    color: #FFF;
+}
+
+#price .items:hover ul li i{
+    color: #FFF;
+}
+#price .items:hover .red{
+    color: #FFF;
+}
+
+
+
+/* ============= price part end ================ */
+
+/* ============= managing part start ================ */
+#manage{
+    padding: 100px 0;
+    background: #F9FAFF;
+}
+#manage .sidebyside{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    padding: 100px 0 0 64px;
+    border-radius: 32px;
+    background: linear-gradient(112deg, #394792 -0.65%, #070F39 107.76%);
+}
+#manage .sidebyside .left{
+    width: 457px;
+}
+#manage .sidebyside h2{
+    color: #FFF;
+    font-family: "Space Grotesk",sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: -2.4px;
+    margin-bottom: 24px;
+}
+
+#manage .left .button{
+    position: relative;
+}
+#manage .sidebyside .button img{
+    position: absolute;
+    top: -30px;
+    left: 215px;
+}
+#manage .left .button a{
+    color: #fff;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+    border: 1px solid #FFF;
+    padding: 18px 32px;
+    border-radius: 30px;
+    transition: all linear .3s;
+    margin-right: 24px;
+    margin-bottom: 60px;
+    color: #394792;
+    background: #FFF;
+}
+#manage .left .button a:hover{
+    background: #394792;
+    color: #FFF;
+}
+#manage .right{
+    width: 592px;
+    height: 320px;
+    overflow: hidden;
+}
+#manage .right img{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px 0px 30px 0px;
+    object-fit: cover;
+}
+
+/* ============= managing part end ================ */
+
+/* ============= footer part start ================ */
+footer{
+    margin-top: 103.62px;
+    margin-bottom: 100px;
+}
+footer .sidebyside{
+    display: grid;
+    grid-template-columns: 406px 800px;
+}
+footer .sidebyside .left p{
+    width: 277px;
+    color: #325B97;
+    font-family: "Inter",sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; 
+    letter-spacing: -0.9px;
+    margin-top: 25.37px;
+}
+footer .sidebyside .right {
+    display: grid;
+    grid-template-columns: repeat(4,200px);
+}
+footer .sidebyside .right .item ul .bold{
+    color: #000;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -1.2px;
+    margin-bottom: 32px;
+}
+footer .sidebyside .right .item{
+    display: grid;
+    justify-content: space-between;
+}
+footer .sidebyside .right .item ul{
+    margin-top: 36px;
+}
+footer .sidebyside .right .item ul li{
+    color: #232323;
+    font-family: "Inter",sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.9px;
+    opacity: 0.7;
+    margin-bottom: 16px;
+}
+footer .sidebyside .bar{
+    width: 1150px;
+    height: 1px;
+    background: #12121229;
+    margin: 32px 0;
+
+}
+footer span{
+    color: #232323;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    opacity: 0.5;
+}
+/* ============= footer part end ================ */
